@@ -94,7 +94,7 @@
     {
       "PowerHint": "INTERACTION",
       "Type": "DoHint",
-      "Value": "INTERACTION_120"
+      "Value": "INTERACTION_90"
     },
     {
       "PowerHint": "INTERACTION",
@@ -142,7 +142,7 @@
     {
       "PowerHint": "REFRESH_90FPS",
       "Type": "MaskHint",
-      "Value": "INTERACTION_120"
+      "Value": "INTERACTION_90"
     },
     {
       "PowerHint": "REFRESH_60FPS",
@@ -152,12 +152,12 @@
     {
       "PowerHint": "REFRESH_60FPS",
       "Type": "MaskHint",
-      "Value": "INTERACTION_120"
+      "Value": "INTERACTION_90"
     },
     {
       "PowerHint": "DISPLAY_IDLE",
       "Type": "EndHint",
-      "Value": "INTERACTION_120"
+      "Value": "INTERACTION_90"
     },
     {
       "PowerHint": "DISPLAY_IDLE",
