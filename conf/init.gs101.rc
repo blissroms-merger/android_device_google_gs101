@@ -783,8 +783,8 @@ on property:sys.boot_completed=1
     write /sys/devices/system/cpu/cpufreq/policy6/sched_pixel/pmu_limit_enable 1
     write /proc/vendor_sched/pmu_poll_enable 0
 
-    # Setup cpu.shares to throttle background groups (bg ~ 5% sysbg ~ 5% dex2oat ~2.5%)
-    write /dev/cpuctl/background/cpu.shares 1024
+    # Setup cpu.shares to throttle background groups (bg ~ 2.5% sysbg ~ 5% dex2oat ~2.5%)
+    write /dev/cpuctl/background/cpu.shares 512
     write /dev/cpuctl/system-background/cpu.shares 1024
     write /dev/cpuctl/dex2oat/cpu.shares 512
     write /dev/cpuctl/system/cpu.shares 20480
