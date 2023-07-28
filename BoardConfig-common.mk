@@ -270,6 +270,10 @@ BOARD_USES_CURL := true
 # Sensor HAL
 BOARD_USES_EXYNOS_SENSORS_DUMMY := true
 
+# Adaptive charging
+PRODUCT_COPY_FILES += \
+    device/google/gs101/conf/adaptivecharging.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/adaptivecharging.xml
+
 # VISION
 # Exynos vision framework (EVF)
 #TARGET_USES_EVF := true
@@ -335,3 +339,4 @@ BOARD_PVMFWIMAGE_PARTITION_SIZE := 0x00100000
 -include vendor/google_devices/gs-common/proprietary/BoardConfigVendor.mk
 
 include device/google/gs101/BoardConfigLineage.mk
+
