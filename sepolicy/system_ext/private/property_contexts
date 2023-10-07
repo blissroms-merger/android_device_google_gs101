@@ -12,3 +12,8 @@ persist.modem.esim_profiles_exist            u:object_r:esim_modem_prop:s0    ex
 
 # Telephony
 telephony.ril.silent_reset    u:object_r:telephony_ril_prop:s0    exact    bool
+
+# ShannonIms
+persist.vendor.radio.call_waiting_for_sync_0    u:object_r:shannon_ims_service_prop:s0    exact    int
+persist.vendor.radio.call_waiting_for_sync_1    u:object_r:shannon_ims_service_prop:s0    exact    int
+persist.vendor.ims.common_update_imsconfig_by_carrierconfig_bool     u:object_r:shannon_ims_service_prop:s0    exact    bool

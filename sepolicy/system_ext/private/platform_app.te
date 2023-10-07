@@ -1,5 +1,6 @@
 # allow systemui to set boot animation colors
 set_prop(platform_app, bootanim_system_prop);
+set_prop(platform_app, shannon_ims_service_prop);
 
 # allow systemui to access fingerprint
 hal_client_domain(platform_app, hal_fingerprint)
