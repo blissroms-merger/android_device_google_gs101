@@ -1,0 +1,2 @@
+# Domain for Google Camera
+user=_app isPrivApp=true seinfo=google name=com.google.android.GoogleCamera domain=camera_google_app type=app_data_file levelFrom=all

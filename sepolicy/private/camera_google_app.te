@@ -1,0 +1,45 @@
+type camera_google_app, domain, coredomain;
+typeattribute camera_google_app coredomain;
+type dmabuf, fs_type;
+
+app_domain(camera_google_app)
+net_domain(camera_google_app)
+
+allow camera_google_app app_api_service:service_manager find;
+allow camera_google_app dmabuf:dir rw_dir_perms;
+allow camera_google_app dmabuf:file create_file_perms;
+allow camera_google_app activity_service:service_manager find;
+allow camera_google_app game_service:service_manager find;
+allow camera_google_app netstats_service:service_manager find;
+allow camera_google_app content_capture_service:service_manager find;
+allow camera_google_app surfaceflinger_service:service_manager find;
+allow camera_google_app permission_checker_service:service_manager find;
+allow camera_google_app activity_task_service:service_manager find;
+allow camera_google_app gpu_service:service_manager find;
+allow camera_google_app trust_service:service_manager find;
+allow camera_google_app batterystats_service:service_manager find;
+allow camera_google_app virtual_device_service:service_manager find;
+allow camera_google_app mediaserver_service:service_manager find;
+allow camera_google_app cameraserver_service:service_manager find;
+allow camera_google_app sensorservice_service:service_manager find;
+allow camera_google_app device_state_service:service_manager find;
+allow camera_google_app thermal_service:service_manager find;
+allow camera_google_app backup_service:service_manager find;
+allow camera_google_app voiceinteraction_service:service_manager find;
+allow camera_google_app hint_service:service_manager find;
+allow camera_google_app audio_service:service_manager find;
+allow camera_google_app audioserver_service:service_manager find;
+allow camera_google_app vibrator_manager_service:service_manager find;
+allow camera_google_app mediametrics_service:service_manager find;
+allow camera_google_app mediaextractor_service:service_manager find;
+allow camera_google_app autofill_service:service_manager find;
+allow camera_google_app package_native_service:service_manager find;
+
+# Allows GCA to access the PowerHAL.
+hal_client_domain(camera_google_app, hal_power)
+
+allow surfaceflinger dmabuf:filesystem getattr;
+allow surfaceflinger unlabeled:filesystem getattr;
+
+# Library code may try to access vendor properties, but should be denied
+dontaudit camera_google_app vendor_default_prop:file { getattr map open };

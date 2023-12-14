@@ -1,5 +1,19 @@
 type hal_camera_default_tmpfs, file_type;
 
+# Vendor domain and attribute for Google Camera
+type vendor_camera_google_app, domain, coredomain;
+typeattribute vendor_camera_google_app coredomain;
+
+# Allows GCA to acccess the GXP device.
+allow vendor_camera_google_app gxp_device:chr_file rw_file_perms;
+
+# Allow GCA to access the GXP properies.
+get_prop(vendor_camera_google_app, vendor_gxp_prop)
+
+# Allows GCA to find and access the EdgeTPU.
+allow vendor_camera_google_app edgetpu_app_service:service_manager find;
+allow vendor_camera_google_app edgetpu_device:chr_file { getattr read write ioctl map };
+
 allow hal_camera_default self:global_capability_class_set sys_nice;
 allow hal_camera_default kernel:process setsched;
 

@@ -54,3 +54,6 @@ user=_app isPrivApp=true seinfo=EuiccSupportPixel name=com.google.euiccpixel dom
 
 # CccDkTimeSyncService
 user=_app isPrivApp=true name=com.google.pixel.digitalkey.timesync domain=vendor_cccdktimesync_app type=app_data_file levelFrom=all
+
+# Vendor Domain for Google Camera
+user=_app isPrivApp=true seinfo=google name=com.google.android.GoogleCamera domain=vendor_camera_google_app type=app_data_file levelFrom=all

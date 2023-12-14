@@ -85,6 +85,7 @@
 /dev/dri/card0                 u:object_r:graphics_device:s0
 /dev/fimg2d                    u:object_r:graphics_device:s0
 /dev/g2d                       u:object_r:graphics_device:s0
+/dev/gxp                       u:object_r:gxp_device:s0
 /dev/tsmux                     u:object_r:video_device:s0
 /dev/repeater                  u:object_r:video_device:s0
 /dev/scsc_h4_0                 u:object_r:radio_device:s0

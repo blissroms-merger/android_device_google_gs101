@@ -1,0 +1,1 @@
+fs_use_trans dmabuf u:object_r:dmabuf:s0;
