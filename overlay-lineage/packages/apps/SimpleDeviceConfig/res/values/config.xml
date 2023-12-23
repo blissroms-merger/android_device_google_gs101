@@ -39,7 +39,6 @@
         <item>device_personalization_services/Captions__model_version_v1=20190613</item>
         <item>device_personalization_services/Captions__model_version_v1_2=20200112</item>
         <item>device_personalization_services/Captions__new_model_version_advanced=20220505</item>
-        <item>device_personalization_services/Captions__new_model_version_advanced_2022=20220831</item>
         <item>device_personalization_services/Captions__speech_threshold=0.2</item>
         <item>device_personalization_services/Captions__supported_languages=en-US;fr-FR;it-IT;de-DE;ja-JP;es-ES</item>
         <item>device_personalization_services/Captions__surface_sound_events=true</item>

@@ -640,6 +640,8 @@ on fs
     chown system system /sys/devices/platform/1c302000.drmdecon/early_wakeup
     chmod 0660 /sys/devices/platform/1c302000.drmdecon/early_wakeup
 
+    setprop sys.usb.config adb
+
 # Copy DRM Key
 #    copy /system/app/wv.keys /factory/wv.keys
 
@@ -896,6 +898,8 @@ on fs
     chown system system /sys/devices/platform/acpm_mfd_bus@17500000/i2c-7/7-001f/s2mpg10-meter/s2mpg10-odpm/iio:device0/enabled_rails
     chown system system /sys/devices/platform/acpm_mfd_bus@17510000/i2c-8/i2c-s2mpg11mfd/s2mpg11-meter/s2mpg11-odpm/iio:device1/enabled_rails
     chown system system /sys/devices/platform/acpm_mfd_bus@17510000/i2c-8/8-002f/s2mpg11-meter/s2mpg11-odpm/iio:device1/enabled_rails
+
+    setprop ro.vendor.trusty.storage.fs_ready 1
 
 on post-fs-data
     mkdir /data/vendor/powerstats 0771 system system

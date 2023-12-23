@@ -668,6 +668,9 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.use_color_management=tr
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.protected_contents=true
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.display_update_imminent_timeout_ms=50
 
+# USB
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += sys.usb.config=adb
+
 # force to blend in P3 mode
 PRODUCT_PROPERTY_OVERRIDES += \
 	persist.sys.sf.native_mode=2 \
