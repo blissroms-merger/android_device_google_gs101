@@ -1144,3 +1144,6 @@ include hardware/google/pixel/HardwareInfo/HardwareInfo.mk
 
 # Memory
 PRODUCT_PRODUCT_PROPERTIES += persist.device_config.mglru_native.lru_gen_config=all
+
+# Esim
+PRODUCT_PRODUCT_PROPERTIES += persist.sys.modem.removeable_esim_as_default=true
