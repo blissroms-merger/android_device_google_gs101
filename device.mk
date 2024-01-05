@@ -1147,3 +1147,7 @@ PRODUCT_PRODUCT_PROPERTIES += persist.device_config.mglru_native.lru_gen_config=
 
 # Esim
 PRODUCT_PRODUCT_PROPERTIES += persist.sys.modem.removeable_esim_as_default=true
+
+# Camera
+persist.vendor.camera.privapp.list=org.lineageos.aperture.org.codeaurora.snapcam,com.android.camera,com.google.android.GoogleCamera
+vendor.camera.aux.packagelist=org.lineageos.aperture,org.codeaurora.snapcam,com.android.camera,com.google.android.GoogleCamera
